@@ -19,14 +19,14 @@
 <div class="content">
 
 	<div class="home">
-		<h1>Elmer Ivon</h1>
+		<a class="e" href="#">Elmer Ivon</a>
 		<h3>Visual Artist | Portfolio</h3>
 	</div>
 
 	<div class="about">
 		
 <p> <b>Welcome!</b><br>
-The primary focus of my work is Surrealism, an unusual distortion of realism to visually display  ideas or themes. Symbols, objects or visual representations of actions become tools for the artist to convey sense of comfort or disturbance. As a result, the artwork becomes an experience, not just a representation.  </p>
+The primary focus of my work is Surrealism, an unusual distortion of realism to visually display  ideas or themes. Symbols, objects or visual representations of actions become tools for the artist to convey sense of comfort or disturbance. As a result, the artwork becomes an experience, not just a visual representation.  </p>
 
 	</div>
 	<div class="gallery">
@@ -57,7 +57,7 @@ The primary focus of my work is Surrealism, an unusual distortion of realism to 
 				<input type="text" name="" class="inputtext"value="Email">
 				<textarea cols="4" rows="6" class="inputmessage">Your Message...
 				</textarea>
-				<input type="button" name="" class="submitbutton"value="Submit">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSdGcSOT_uaQbu6lLuNnXozgz9zuPldyeQReDm2enkIgpVP6NA/viewform?usp=sf_link">Submit</a>
 			</form>
 	
 	</div>
@@ -79,10 +79,12 @@ The primary focus of my work is Surrealism, an unusual distortion of realism to 
 		$b = $('.b'),
 		$c = $('.c'),
 		$d = $('.d'),
+		$e = $('.e'),
 		$home = $('.home'),
 		$about = $('.about');
 		$gallery = $('.gallery'),
 		$contact = $('.contact');
+		$nav = $('.nav');
 
 		$a.click(function(){
 			$home.fadeIn();
@@ -92,22 +94,33 @@ The primary focus of my work is Surrealism, an unusual distortion of realism to 
 		});
 		$b.click(function(){
 			$gallery.fadeIn();
-			$home.fadeOut();
+			$home.fadeIn();
 			$about.fadeOut();
 			$contact.fadeOut();
+			$nav.fadeOut();
 		});
 		$c.click(function(){
 			$about.fadeIn();
-			$home.fadeOut();
+			$home.fadeIn();
 			$gallery.fadeOut();
 			$contact.fadeOut();
+			$nav.fadeOut();
 		});
 		$d.click(function(){
 			$contact.fadeIn();
-			$home.fadeOut();
+			$home.fadeIn();
+			$gallery.fadeOut();
+			$about.fadeOut();
+			$nav.fadeOut();
+		});
+		$e.click(function(){
+			$contact.fadeOut();
+			$nav.fadeIn();
+			$home.fadeIn();
 			$gallery.fadeOut();
 			$about.fadeOut();
 		});
+
 	});
 </script>
 </body>
